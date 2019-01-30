@@ -1,20 +1,19 @@
-
+HTML CSS 
+Result 
+EDIT ON
+ 
 body {
   margin: 40px;
   background-color: #111111 ;
-  max-width: 100vw;
-  max-height: 100vh;
-  font-family: "Arial";
 }
 
 .sidebar {
         grid-area: sidebar;
-        color: rgb(141, 141, 141);
+        background-color: #111111 ;
     }
 
     .sidebar2 {
         grid-area: sidebar2;
-
     }
 
     .content {
@@ -30,8 +29,8 @@ body {
     }
 
     .wrapper {
-        background-color: #fff;
-        color: rgb(141, 141, 141);
+        background-color: #111111 ;
+        color: #444;
     }
 
   .wrapper {
@@ -42,9 +41,7 @@ body {
      "sidebar"
      "content"
      "sidebar2"
-     "footer";
-     background-color: #111111;
-
+     "footer"
   }
 
     @media only screen and (min-width: 500px)  {
@@ -72,19 +69,28 @@ body {
     }
 
 .box {
-  background-color: #444;
   color: #fff;
   border-radius: 5px;
   padding: 10px;
   font-size: 150%; 
-
+  background-color: blue;
 }
 
 .header,
 .footer {
-  background-color: rgb(69, 72, 221);
+  background-color: #999;
 }
 
 .sidebar2 {
-    background-color: rgb(12, 19, 80);
+  background-color: #971313;
+  color: #444;
 }
+
+.sidebar3 {
+    background-color: #971313;
+    color: #444;
+  }
+.sidebar {
+    background-color: rgb(123, 123, 233);
+    color: #444;
+  }
