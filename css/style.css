@@ -72,6 +72,7 @@ body {
   border-radius: 5px;
   padding: 10px;
   font-size: 150%; 
+  background-color: blue;
 }
 
 .header,
@@ -80,6 +81,6 @@ body {
 }
 
 .sidebar2 {
-  background-color: #ccc;
+  background-color: #971313;
   color: #444;
 }
