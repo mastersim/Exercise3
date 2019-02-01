@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   background-color: white;
 }
@@ -8,6 +9,8 @@ body {
   padding: 10px;
 }
 
+=======
+>>>>>>> design
 HTML CSS
 Result
 EDIT ON
@@ -22,6 +25,7 @@ body {
   grid-area: sidebar;
   background-color: #ffffff;
 }
+<<<<<<< HEAD
 
 .sidebar2 {
   -ms-grid-row: 4;
@@ -67,6 +71,53 @@ body {
   }
 }
 
+=======
+
+.sidebar2 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: sidebar2;
+}
+
+.content {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: content;
+}
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
+.footer {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+
+.wrapper {
+  background-color: #ffffff;
+  color: #444;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1em;
+      grid-template-areas: "header" "sidebar" "content" "sidebar2" "footer";
+}
+
+@media only screen and (min-width: 500px) {
+  .wrapper {
+    -ms-grid-columns: 20% auto;
+        grid-template-columns: 20% auto;
+        grid-template-areas: "header   header" "sidebar  content" "sidebar2 sidebar2" "footer   footer";
+  }
+}
+
+>>>>>>> design
 @media only screen and (min-width: 600px) {
   .wrapper {
     grid-gap: 20px;
@@ -82,26 +133,50 @@ body {
   border-radius: 5px;
   padding: 10px;
   font-size: 150%;
+<<<<<<< HEAD
   background-color: #573dee;
+=======
+  background-color: blue;
+>>>>>>> design
 }
 
 .header,
 .footer {
+<<<<<<< HEAD
   background-color: #1100ff;
+=======
+  background-color: #11c7e7;
+>>>>>>> design
 }
 
 .sidebar2 {
   background-color: #606de6;
+<<<<<<< HEAD
   color: #fdfdfd;
+=======
+  color: #444;
+>>>>>>> design
 }
 
 .sidebar3 {
   background-color: #606de6;
+<<<<<<< HEAD
   color: #f1f1f1;
+=======
+  color: #444;
+>>>>>>> design
 }
 
 .sidebar {
   background-color: #7b7be9;
+<<<<<<< HEAD
   color: white;
+=======
+  color: #444;
+}
+
+div {
+  border: 1px solid black;
+>>>>>>> design
 }
 /*# sourceMappingURL=style.css.map */
