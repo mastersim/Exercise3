@@ -4,7 +4,7 @@ body {
 
 .wrapper {
   border: 10px solid;
-  border-color: #092beb;
+  border-color: #011897;
   padding: 10px;
 }
 
@@ -92,16 +92,16 @@ body {
 
 .sidebar2 {
   background-color: #606de6;
-  color: #444;
+  color: #fdfdfd;
 }
 
 .sidebar3 {
   background-color: #606de6;
-  color: #444;
+  color: #f1f1f1;
 }
 
 .sidebar {
   background-color: #7b7be9;
-  color: #444;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
