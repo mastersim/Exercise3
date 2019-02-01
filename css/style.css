@@ -1,96 +1,101 @@
-HTML CSS 
-Result 
+HTML CSS
+Result
 EDIT ON
- 
 body {
   margin: 40px;
-  background-color: #111111 ;
+  background-color: #ffffff;
 }
 
 .sidebar {
-        grid-area: sidebar;
-        background-color: #111111 ;
-    }
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: sidebar;
+  background-color: #ffffff;
+}
 
-    .sidebar2 {
-        grid-area: sidebar2;
-    }
+.sidebar2 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: sidebar2;
+}
 
-    .content {
-        grid-area: content;
-    }
+.content {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: content;
+}
 
-    .header {
-        grid-area: header;
-    }
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
 
-    .footer {
-        grid-area: footer;
-    }
+.footer {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
 
-    .wrapper {
-        background-color: #111111 ;
-        color: #444;
-    }
+.wrapper {
+  background-color: #ffffff;
+  color: #444;
+}
 
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1em;
+      grid-template-areas: "header" "sidebar" "content" "sidebar2" "footer";
+}
+
+@media only screen and (min-width: 500px) {
   .wrapper {
-    display: grid;
-    grid-gap: 1em;
-    grid-template-areas:
-     "header"
-     "sidebar"
-     "content"
-     "sidebar2"
-     "footer"
-  }
-
-    @media only screen and (min-width: 500px)  {
-    .wrapper {
-
+    -ms-grid-columns: 20% auto;
         grid-template-columns: 20% auto;
-        grid-template-areas:
-    "header   header"
-        "sidebar  content"
-        "sidebar2 sidebar2"
-        "footer   footer";
-    }
-    }
+        grid-template-areas: "header   header" "sidebar  content" "sidebar2 sidebar2" "footer   footer";
+  }
+}
 
-    @media only screen and (min-width: 600px)   {
-        .wrapper {
-      grid-gap: 20px;
-            grid-template-columns: 120px auto 120px;
-            grid-template-areas:
-      "header  header  header"
-            "sidebar content sidebar2"
-            "footer  footer  footer";
-            max-width: 600px;
-        }
-    }
+@media only screen and (min-width: 600px) {
+  .wrapper {
+    grid-gap: 20px;
+    -ms-grid-columns: 120px auto 120px;
+        grid-template-columns: 120px auto 120px;
+        grid-template-areas: "header  header  header" "sidebar content sidebar2" "footer  footer  footer";
+    max-width: 600px;
+  }
+}
 
 .box {
   color: #fff;
   border-radius: 5px;
   padding: 10px;
-  font-size: 150%; 
+  font-size: 150%;
   background-color: blue;
 }
 
 .header,
 .footer {
-  background-color: #999;
+  background-color: #11c7e7;
 }
 
 .sidebar2 {
-  background-color: #971313;
+  background-color: #606de6;
   color: #444;
 }
 
 .sidebar3 {
-    background-color: #971313;
-    color: #444;
-  }
+  background-color: #606de6;
+  color: #444;
+}
+
 .sidebar {
-    background-color: rgb(123, 123, 233);
-    color: #444;
-  }
+  background-color: #7b7be9;
+  color: #444;
+}
+
+div {
+  border: 1px solid black;
+}
+/*# sourceMappingURL=style.css.map */
