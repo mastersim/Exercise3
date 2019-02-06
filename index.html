@@ -1,29 +1,63 @@
 <!doctype html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
-  <title>Exercise 2</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+    <title>Exercise 2</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
 
-  <link rel="stylesheet" href="css/style.css?v=1.0">
+    <link rel="stylesheet" href="css/style.css?v=1.0">
 
-</head>
 
-<body>
-        <div class="wrapper">
-        <div class="box header">Header</div>
-        <div class="box sidebar">Sidebar</div>
-        <div class="box sidebar2">Sidebar 2</div>
-        <div class="box sidebar3">Sidebar 3</div>
-        <div class="box sidebar4">Sidebar 4</div>
-        <div class="box sidebar5">Sidebar 5</div>
+  </head>
 
-        <div class="box content">Content
-            <br /> More content than we had before so this column is now quite tall.</div>
-        <div class="box footer">Footer</div>
-        </div>
+  <body>
+
+      <input type="checkbox" id="chkBoutonBurger" />
+      <label for="chkBoutonBurger" class="boutonBurger"></label>
+
+
+      <div class="global">
+        <nav class="menu">
+            <a href="#">BOUTON 1</a>
+            <a href="#">BOUTON 2</a>
+            <a href="#">BOUTON 3</a>
+            <a href="#">BOUTON 4</a>
+          </nav>
+        <!-- /MENU -->
+
+          <div class="wrapper">
+          <div class="box header">Header</div>
+          <div class="box sidebar">Sidebar</div>
+          <div class="box sidebar2">Sidebar 2</div>
+
+          <div class="box content">Content
+              <br /> 
+          </div>
+          <div class="box footer">Footer</div>
+          </div>
+    </div>
+        
+	<script>
+      /*
+      Contrôler l'aspect de la case à cocher au clic sur les boutons
+      */
+      
+      (function() { //IIFE
+        var leCheckBox = document.querySelector("input");
+        var lesBoutons = document.querySelectorAll(".menu a");
+        var nbBoutons = lesBoutons.length;		
+        console.log(nbBoutons);
+        
+        for (var i = 0; i < nbBoutons; i++) {
+          lesBoutons[i].addEventListener("click", function() {
+            console.log(leCheckBox.checked);
+            leCheckBox.checked = false;
+          }, false);
+        }
+      })(); //Fin IIFE
+    </script>
 </body>
 </html>
