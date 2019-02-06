@@ -238,8 +238,6 @@ EDIT ON
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 body {
@@ -305,13 +303,8 @@ body {
 .menu a {
   text-decoration: none;
   color: white;
-  border-bottom: 1px solid white;
   font-size: 1.5rem;
   padding: 0.5rem;
-}
-
-.menu a:first-child {
-  border-top: 1px solid white;
 }
 
 .boutonBurger {
@@ -375,7 +368,7 @@ body {
 }
 
 .wrapper {
-  padding: %;
+  padding: 1%;
   background-color: #ffffff;
   color: #444;
   min-width: 100vw;
@@ -430,7 +423,6 @@ body {
   }
   .menu a {
     border: none;
-    border-left: 1px solid white;
     /*Propriété comme item flex - peut s'étirer en largeur*/
     -webkit-box-flex: 1;
         -ms-flex: 1 0 auto;
@@ -450,7 +442,6 @@ body {
 
 .box {
   color: #fff;
-  border-radius: 2px;
   padding: 10px;
   font-size: 150%;
   background-color: blue;
